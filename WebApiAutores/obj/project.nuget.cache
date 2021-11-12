@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nwN9vPO+Vr0I2GXZDPzDZFao+mFss1+cXlokzt+GhNnufUW7c6rMBw6rdnJEZZOnhbfNvVoE5oZ3H/tC+yuutA==",
+  "dgSpecHash": "G8rWAluyvpudocxBu+cFFsfEUGGLhxo53unkvP13OfzMQy+VS8P2R/2bnH6uG7mO3tzx2MF71R7svkhstZtzSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\David\\source\\repos\\WebApiAutores\\WebApiAutores.csproj",
+  "projectFilePath": "C:\\Users\\David\\Documents\\Github\\BackendAutores\\WebApiAutores\\WebApiAutores.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\David\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

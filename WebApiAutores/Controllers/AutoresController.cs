@@ -34,7 +34,7 @@ public class AutoresController : ControllerBase
     public async Task<ActionResult> Put(Autor autor, int id) {
         if (autor.Id != id)
         {
-            return BadRequest("El id del autor no coincide con el id de la URL");
+            return BadRequest("El id del autor no coincide con el id de la URL, revisar");
         }
 
         var existe = await context.Autores.AnyAsync(x => x.Id == id);
