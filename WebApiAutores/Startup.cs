@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Text.Json.Serialization;
 
 namespace WebApiAutores
 {
@@ -16,7 +17,8 @@ namespace WebApiAutores
         public IConfiguration Configuration {  get; }
         public void ConfigureServices(IServiceCollection services) {
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(
+                x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
             services.AddDbContext<ApplicationDbContext>(options =>
                      options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
 

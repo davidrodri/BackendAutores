@@ -19,9 +19,15 @@ public class AutoresController : ControllerBase
     [HttpGet]
     public async Task< ActionResult<List<Autor>>> Get()
     {
-        return await context.Autores.ToListAsync();
-        
+        return await context.Autores.Include(x => x.Libros).ToListAsync();        
     }
+
+    [HttpGet("primerregistro")]
+    public async Task<ActionResult<Autor>> ObtenerPrimerAutor()
+    {
+        return await context.Autores.FirstOrDefaultAsync();
+    }
+
 
     [HttpPost]
     public async Task<ActionResult> Post(Autor autor) {
