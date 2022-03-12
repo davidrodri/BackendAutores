@@ -7,7 +7,7 @@ using WebApiAutores.Entidades;
 namespace WebApiAutores.Controllers
 {
     [ApiController]
-    [Route("api/libros")]
+    [Route("api/[controller]")]
     public class LibrosController : ControllerBase
     {
         private readonly ApplicationDbContext context;

@@ -17,6 +17,8 @@ public class AutoresController : ControllerBase
     }
 
     [HttpGet]
+    [HttpGet("listado")]
+    [HttpGet("/list")]
     public async Task< ActionResult<List<Autor>>> Get()
     {
         return await context.Autores.Include(x => x.Libros).ToListAsync();        
